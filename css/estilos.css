@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Overlock&family=Sanchez&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(29, 29, 29);
+}
+
+.barra-navegacion {
+    display: flex;
+    color: white;
+    list-style: none;
+    
+}
+
+.nav-texto {
+    list-style: none;
+    text-decoration-line: none;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 2rem;
+}
+
+.redes-sociales {
+    display: flex;
+    cursor: pointer;
+}
+.texto-footer {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.titulo {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 5rem;
+}
+
+.subtitulo {
+    font-family: 'Sanchez', serif;
+    font-size: 3rem;
+}
+
+.letra-productos {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 3rem;
+}
+
+.letra-especialidades {
+    font-family: 'Overlock', cursive;
+    font-size: 2rem;
+}
+
+.letra-tipos-productos {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 2rem;
+}
+
+.letra-lista-productos {
+    font-family: 'Overlock', cursive;
+    font-size: 1.25rem;
+}
