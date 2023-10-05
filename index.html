@@ -13,117 +13,163 @@
 <body>
     
     <header class="cabecera">
-        <a href="#">
-            <img src="../01_Proyecto_CoderHouse/assets/img/logo_entremigas.JPG" alt="logo Entremigas">
-        </a>
-
-        <nav >
-            <ul class="barra-navegacion">
-                <li>  <a class="nav-texto" href="./index.html">Inicio</a>  </li>
-                <li>  <a class="nav-texto" href="./pages/productos.html">Productos</a>  </li>
-                <li>  <a class="nav-texto" href="./pages/nosotros.html">Nosotros</a>  </li>
-                <li>  <a class="nav-texto" href="./pages/sucursales.html">Sucursales</a>  </li>
-                <li>  <a class="nav-texto" href="./pages/contacto.html">Contacto</a>  </li>                
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark w-100 h-100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/img/logo_entremigas.JPG" class="logoNavbar rounded-circle" alt="Logo Entremigas">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                  <li class="nav-item nav-texto">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item nav-texto">
+                    <a class="nav-link" href="./pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item nav-texto">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item nav-texto">
+                    <a class="nav-link" href="./pages/sucursales.html">Sucursales</a>
+                  </li>
+                  <li class="nav-item nav-texto">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>                  
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <hr>
+    
     <main>
-        <section>
+        <section class="cajaFondoPrincipal d-flex flex-column justify-content-start align-items-center">
             <!-- la imagen va de fondo con transparencia y el texto delante  -->
-            <h1 class="titulo">Panaderia & Pasteleria</h1>
-            <h2 class="subtitulo">100% Artesanal</h2>
-            <img src="./assets/img/imagen_principal_index.jpg" alt="Imagen de fondo de Panaderia">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h1 class="titulo">Panaderia & Pasteleria</h1>
+                <h2 class="subtitulo">100% Artesanal</h2>
+            </div>
+                
         </section>
+        
         <hr>
+        
         <section>
             <!-- esto va centrado como titulo introductorio de los distintos productos a fabricar -->
-            <h2 class="letra-productos">Productos</h2>
-            <h3 class="letra-especialidades">- nuestras especialidades -</h3>
-            <br>
+            <div class="cabecera text-white d-flex flex-column justify-content-center align-items-center">
+                <h2 class="letra-productos">Productos</h2>
+                <h3 class="letra-especialidades">- nuestras especialidades -</h3>
+            </div>
+        <br>
         </section>
         <hr>
-        <section>
-            <div>
-                <h3 class="letra-tipos-productos">PASTAS</h3>
-                <h4 class="letra-lista-productos">Fideos, Sorrentinos, Ravioles, Ñoquis </h4>
+        
+        <section class="container">
+            <div class="d-flex justify-content-center align-items-center row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="d-flex flex-column justify-content-center align-items-center bg-warning">
+                        <h3 class="letra-tipos-productos">PASTAS</h3>
+                         <h4 class="letra-lista-productos">Fideos, Sorrentinos, Ravioles, Ñoquis </h4>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <a href="./pages/productos.html">  <img src="./assets/img/imagen_pastas_index.jpg" alt="Pastas">  </a>
+                </div>
             </div>
-            <a href="./pages/productos.html">  <img src="./assets/img/imagen_pastas_index.jpg" alt="Pastas">  </a>
         </section>
-        <hr>
-        <section>
-            <div>
-                <h3 class="letra-tipos-productos">CONFITERIA</h3>
-                <h4 class="letra-lista-productos">Facturas, alfajores, churros, pastafrolas</h4>
+
+        <section class="container">
+            <div class="d-flex flex-row-reverse align-items-center row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="d-flex flex-column justify-content-center align-items-center bg-warning">
+                        <h3 class="letra-tipos-productos">CONFITERIA</h3>
+                         <h4 class="letra-lista-productos">Facturas, alfajores, churros, pastafrolas </h4>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <a href="./pages/productos.html">  <img src="./assets/img/imagen_confiteria_index.JPG" alt="Confiteria">  </a>
+                </div>
             </div>
-            <a href="./pages/productos.html">  <img src="./assets/img/imagen_confiteria_index.JPG" alt="Pastas">  </a>
         </section>
-        <hr>
-        <section>
-            <div>
-                <h3 class="letra-tipos-productos">PASTELERIA DULCE</h3>
-                <h4 class="letra-lista-productos">Postres, tartas, tortas, masas finas, masas secas,
-                    budines, roscas, merengues, mini-postres</h4>
+        
+        <section class="container">
+            <div class="d-flex justify-content-center align-items-center row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="d-flex flex-column justify-content-center align-items-center bg-warning">
+                        <h3 class="letra-tipos-productos">PASTELERIA DULCE</h3>
+                         <h4 class="letra-lista-productos">Postres, tartas, tortas, masas finas, masas secas,
+                            budines, mini-postres </h4>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <a href="./pages/productos.html">  <img src="./assets/img/imagen_pasteleria_dulce_index.JPG" alt="Pasteleria Dulce">  </a>
+                </div>
             </div>
-            <a href="./pages/productos.html"> <img src="./assets/img/imagen_pasteleria_dulce_index.JPG" alt="Pastas"> </a>
-            
         </section>
-        <hr>
-        <section>
-            <div>
-                <h3 class="letra-tipos-productos">PASTELERIA SALADA</h3>
-                <h4 class="letra-lista-productos">Bocaditos salados, sandwiches de miga, empanadas, pizzas</h4>
+
+        <section class="container">
+            <div class="d-flex flex-row-reverse align-items-center row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="d-flex flex-column justify-content-center align-items-center bg-warning">
+                        <h3 class="letra-tipos-productos">PASTELERIA SALADA</h3>
+                         <h4 class="letra-lista-productos">Bocaditos salados, sandwiches de miga, empanadas, pizzas </h4>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <a href="./pages/productos.html">  <img src="./assets/img/imagen_pasteleria_salada_index.JPG" alt="Pasteleria Salada">  </a>
+                </div>
             </div>
-            <a href="./pages/productos.html">  <img src="./assets/img/imagen_pasteleria_salada_index.JPG" alt="Pastas"> </a>
-            
-        </section>
+        </section>   
 
     </main>
     
     <hr>
     
-    <footer class="footer">
-        
-        <div>
-                <img src="./assets/img/logo_entremigas.JPG" alt="logo Entremigas">
-                <p>El secreto para lograr la calidad, la frescura y el sabor inigualable 
+    <footer class="footer container-fluid">   
+        <div class="row justify-content-center align-items-center bloqueFooter">
+            <div class="col-sm-12 col-md-6">
+                <img src="./assets/img/logo_entremigas.JPG" class="logoNavbar rounded-circle" alt="logo Entremigas">
+                <p class="">
+                    El secreto para lograr la calidad, la frescura y el sabor inigualable 
                     de los productos que elaboramos responde a un arte, que se transmite de 
                     generación en generación y se basa en la pasión por lo que hacemos.</p>
                 <br>
                 
-                <div class="redes-sociales">
-                    <a href="https://www.instagram.com/">   <i class="fa-brands fa-instagram fa-2xl"></i>   </a>
-                    <a href="https://www.facebook.com/">   <i class="fa-brands fa-facebook fa-2xl"></i>   </a>
-                    <a href="https://www.whatsapp.com/?lang=es_LA">   <i class="fa-brands fa-whatsapp fa-2xl"></i>   </a>       
+                <div class="redes-sociales container justify-content-evenly align-items-center">
+                    <a href="https://www.instagram.com/">   <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;" ></i>   </a>
+                    <a href="https://www.facebook.com/">   <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>   </a>
+                    <a href="https://www.whatsapp.com/?lang=es_LA">   <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i>   </a>       
                 </div>
-        </div>
+            </div>
             
-        <div>
-            <div class="texto-footer">
-                <i class="fa-solid fa-house"></i>
-                <div>
-                    <p>VISITANOS</p>
-                    <p>Av. Sta. Catalina 5449, N3300 Posadas, Misiones</p>
-                </div>    
-            </div>
-            <br>
-            <div class="texto-footer">
-                <i class="fa-solid fa-phone"></i>
-                <div>
-                    <p>LLAMANOS</p>
-                    <p>03764-737144</p>
-                </div>  
-            </div>
-            <br>
-            <div class="texto-footer">
-                <i class="fa-regular fa-clock"></i>
-                <div>
-                    <p>ABRIMOS</p>
-                    <p>Lunes a Domingo: 07:00 - 13:00 y 16:00 - 20:30</p>
+            <div class="col-sm-12 col-md-6 d-flex flex-column">
+                <div class="texto-footer">
+                    <i class="fa-solid fa-house"></i>
+                    <div>
+                        <p>VISITANOS</p>
+                        <p>Av. Sta. Catalina 5449, N3300 Posadas, Misiones</p>
+                    </div>    
+                </div>
+                <br>
+                <div class="texto-footer">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <p>LLAMANOS</p>
+                        <p>03764-737144</p>
+                    </div>  
+                </div>
+                <br>
+                <div class="texto-footer">
+                    <i class="fa-regular fa-clock"></i>
+                    <div>
+                        <p>ABRIMOS</p>
+                        <p>Lunes a Domingo: 07:00 - 13:00 y 16:00 - 20:30</p>
+                    </div>
                 </div>
             </div>
-        </div>
-                 
+        </div>             
     </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>

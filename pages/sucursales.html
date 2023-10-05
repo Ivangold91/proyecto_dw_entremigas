@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los mejores Panificados | Entre Migas</title>
+    <!-- link para conectar con hoja de estilos bootstrap minificado -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- link para conectar con hoja de estilos -->
     <link rel="stylesheet" href="../css/estilos.css"> 
     <script src="https://kit.fontawesome.com/ac70803b41.js" crossorigin="anonymous"></script>
@@ -11,20 +13,35 @@
 <body>
     
     <header class="cabecera">
-        <a href="../index.html">
-            <img src="../assets/img/logo_entremigas.JPG" alt="logo Entremigas">
-        </a>
-
-        <nav>
-            <ul class="barra-navegacion">
-                <li>  <a class="nav-texto" href="../index.html">Inicio</a>  </li>
-                <li>  <a class="nav-texto" href="./productos.html">Productos</a>  </li>
-                <li>  <a class="nav-texto" href="./nosotros.html">Nosotros</a>  </li>
-                <li>  <a class="nav-texto" href="./sucursales.html">Sucursales</a>  </li>
-                <li>  <a class="nav-texto" href="./contacto.html">Contacto</a>  </li>                
-            </ul>
-        </nav>
-
+        <nav class="navbar navbar-expand-lg navbar-dark w-100 h-100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logo_entremigas.JPG" class="logoNavbar rounded-circle" alt="Logo Entremigas">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                  <li class="nav-item nav-texto">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item nav-texto">
+                    <a class="nav-link" href="../pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item nav-texto">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item nav-texto">
+                    <a class="nav-link active" aria-current="page" href="../pages/sucursales.html">Sucursales</a>
+                  </li>
+                  <li class="nav-item nav-texto">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>                  
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
@@ -52,48 +69,52 @@
 
     </main>
 
-    <footer class="footer">
-        
-        <div>
-                <img src="../assets/img/logo_entremigas.JPG" alt="logo Entremigas">
-                <p>El secreto para lograr la calidad, la frescura y el sabor inigualable 
+    <hr>
+    
+    <footer class="footer container-fluid">   
+        <div class="row justify-content-center align-items-center bloqueFooter">
+            <div class="col-sm-12 col-md-6">
+                <img src="../assets/img/logo_entremigas.JPG" class="logoNavbar rounded-circle" alt="logo Entremigas">
+                <p class="">
+                    El secreto para lograr la calidad, la frescura y el sabor inigualable 
                     de los productos que elaboramos responde a un arte, que se transmite de 
                     generación en generación y se basa en la pasión por lo que hacemos.</p>
                 <br>
                 
-                <div class="redes-sociales">
-                    <a href="https://www.instagram.com/">   <i class="fa-brands fa-instagram fa-2xl"></i>   </a>
-                    <a href="https://www.facebook.com/">   <i class="fa-brands fa-facebook fa-2xl"></i>   </a>
-                    <a href="https://www.whatsapp.com/?lang=es_LA">   <i class="fa-brands fa-whatsapp fa-2xl"></i>   </a>       
+                <div class="redes-sociales container justify-content-evenly align-items-center">
+                    <a href="https://www.instagram.com/">   <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;" ></i>   </a>
+                    <a href="https://www.facebook.com/">   <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>   </a>
+                    <a href="https://www.whatsapp.com/?lang=es_LA">   <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i>   </a>       
                 </div>
-        </div>
+            </div>
             
-        <div>
-            <div class="texto-footer">
-                <i class="fa-solid fa-house"></i>
-                <div>
-                    <p>VISITANOS</p>
-                    <p>Av. Sta. Catalina 5449, N3300 Posadas, Misiones</p>
-                </div>    
-            </div>
-            <br>
-            <div class="texto-footer">
-                <i class="fa-solid fa-phone"></i>
-                <div>
-                    <p>LLAMANOS</p>
-                    <p>03764-737144</p>
-                </div>  
-            </div>
-            <br>
-            <div class="texto-footer">
-                <i class="fa-regular fa-clock"></i>
-                <div>
-                    <p>ABRIMOS</p>
-                    <p>Lunes a Domingo: 07:00 - 13:00 y 16:00 - 20:30</p>
+            <div class="col-sm-12 col-md-6 d-flex flex-column">
+                <div class="texto-footer">
+                    <i class="fa-solid fa-house"></i>
+                    <div>
+                        <p>VISITANOS</p>
+                        <p>Av. Sta. Catalina 5449, N3300 Posadas, Misiones</p>
+                    </div>    
+                </div>
+                <br>
+                <div class="texto-footer">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <p>LLAMANOS</p>
+                        <p>03764-737144</p>
+                    </div>  
+                </div>
+                <br>
+                <div class="texto-footer">
+                    <i class="fa-regular fa-clock"></i>
+                    <div>
+                        <p>ABRIMOS</p>
+                        <p>Lunes a Domingo: 07:00 - 13:00 y 16:00 - 20:30</p>
+                    </div>
                 </div>
             </div>
-        </div>
-                 
+        </div>             
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>  
