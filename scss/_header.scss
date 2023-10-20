@@ -1,0 +1,23 @@
+.cabecera{
+    background-color: $color-primario;
+    .logoNavbar {
+        max-width: 100%;
+        max-height: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;  }
+    .nav-texto {
+        list-style: none;
+        text-decoration-line: none;
+        text-decoration: none;
+        padding-right: 4rem;
+        font-size: map-get($mapa-tamañosFuentes, fuente-xs );     }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .cabecera {
+        .nav-texto {
+            font-size: map-get($mapa-tamañosFuentes, fuente-xs );         }
+    }
+    
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Overlock&family=Sanchez&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.cabecera{
+    background-color: rgb(29, 29, 29);
+      }
+
+.barra-navegacion {
+    color: white;
+    list-style: none;    }
+
+.logoNavbar {
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;  }
+
+.cajaFondoPrincipal {
+    height: 90vh;
+    background-image: url(../assets/img/imagen_principal_index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-texto {
+    list-style: none;
+    text-decoration-line: none;
+    text-decoration: none;
+    padding-right: 4rem;
+    font-size: 1.5rem;
+}
+
+.cardsMain {
+    background-image: url(../assets/img/fondo-nav2.PNG);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+   
+    
+}
+
+.redes-sociales {
+    display: flex;
+    cursor: pointer;
+}
+.texto-footer {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.titulo {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 10rem;
+    color: white;
+}
+
+.subtitulo {
+    font-family: 'Sanchez', serif;
+    font-size: 5rem;
+    color: white;
+}
+
+.letra-productos {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 3rem;
+}
+
+.letra-especialidades {
+    font-family: 'Overlock', cursive;
+    font-size: 2rem;
+}
+
+.letra-tipos-productos {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 2rem;
+}
+
+.letra-lista-productos {
+    font-family: 'Overlock', cursive;
+    font-size: 1.25rem;
+}
+
+.bloqueFooter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img {
+    height: 100vh;
+    
+    
+}
+
+.imgPastas {
+    max-width: auto;
+    height: 100%;
+    object-fit: contain;
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    .nav-texto {
+        font-size: 1.5rem;
+    }
+    .titulo {
+        font-size: 7rem;    }
+    
+    .subtitulo {
+        font-size: 3rem;    }
+}

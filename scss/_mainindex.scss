@@ -1,0 +1,48 @@
+.cabecera{
+    background-color: $color-primario;
+    .letra-productos {
+        font-family: 'BenchNine', sans-serif;
+        font-size: map-get($mapa-tamañosFuentes, fuente-m );     }
+    .letra-especialidades {
+        font-family: 'Overlock', cursive;
+        font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-s );     }
+}
+
+.cajaFondoPrincipal {
+    height: 90vh;
+    background-image: url(../assets/img/imagen_principal_index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .titulo {
+        font-family: $tipografia-tituloprincipal;
+        font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-xxl );
+        color: white;      }
+    .subtitulo {
+        font-family: $tipografia-subtituloprincipal;
+        font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-l );
+        color: white;        }
+}
+
+@media screen and (max-width: 768px) { 
+    .cajaFondoPrincipal {
+        .titulo {
+            font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-xl );    }
+        .subtitulo {
+            font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-m );    }
+    }
+}
+
+.cardsMain {
+    background-image: url(../assets/img/fondo-nav2.PNG);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center; 
+    
+    .letra-tipos-productos {
+        font-family: $tipografia-tituloprincipal;
+        font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-s );  }
+    .letra-lista-productos {
+        font-family: $tipografia-textocards;
+        font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-xs );  }
+}

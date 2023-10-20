@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    background-color: $color-primario;
+    color: white;  
+    .bloqueFooter {
+        padding-top: 20px;
+        padding-bottom: 20px;  
+        .logoNavbar {
+            max-width: 100%;
+            max-height: 100%;
+            padding-top: 5px;
+            padding-bottom: 5px;  }
+        .redes-sociales {
+            display: flex;
+            cursor: pointer;  }
+    }
+    .texto-footer {
+        display: flex;  } 
+}
