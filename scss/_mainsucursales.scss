@@ -1,0 +1,25 @@
+.fondoSucursales {
+    background-image: url(../assets/img/fondo-nav2.PNG);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) { 
+    .fondoSucursales {
+        background-color: $color-primario;
+        background-image: none;
+    }
+}
+
+.sucursalPrincipal {
+    background-color: $color-secundario;
+}
+
+.sucursalCentro {
+    background-color: $color-terciario;
+}
+
+.cajaSucursalCentro {
+    background-color: $color-cuarto !important;
+}

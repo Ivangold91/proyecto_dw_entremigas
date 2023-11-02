@@ -41,7 +41,7 @@
 
 .cajaFondoPrincipal {
   height: 90vh;
-  background-image: url(../assets/img/imagen_principal_index.jpg);
+  background-image: url(../assets/img/entremigas/presentacion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,12 +49,12 @@
 .cajaFondoPrincipal .titulo {
   font-family: "BenchNine", sans-serif;
   font-size: 10rem;
-  color: white;
+  color: black;
 }
 .cajaFondoPrincipal .subtitulo {
   font-family: "Sanchez", serif;
   font-size: 5rem;
-  color: white;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
@@ -78,6 +78,39 @@
 .cardsMain .letra-lista-productos {
   font-family: "Overlock", cursive;
   font-size: 1.5rem;
+}
+
+.formatoBoton {
+  background-color: rgb(29, 29, 29);
+}
+
+.btn:hover {
+  background-color: rgb(255, 130, 1);
+}
+
+.fondoSucursales {
+  background-image: url(../assets/img/fondo-nav2.PNG);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .fondoSucursales {
+    background-color: rgb(29, 29, 29);
+    background-image: none;
+  }
+}
+.sucursalPrincipal {
+  background-color: rgb(255, 130, 1);
+}
+
+.sucursalCentro {
+  background-color: rgb(213, 196, 41);
+}
+
+.cajaSucursalCentro {
+  background-color: rgb(255, 241, 177) !important;
 }
 
 footer {

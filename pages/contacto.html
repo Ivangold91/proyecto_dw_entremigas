@@ -47,30 +47,51 @@
     </header>
 
     <main>
-        <section>
-            <h1>Contacto</h1>
+        <section class="container">
+            <h1>¿Necesitas un pedido especial?</h1>
             <div>
-                <p>Subscribite a nuestras redes sociales y recibí las mejores ofertas y descuentos en nuestros productos </p>    
+                <p>Dejanos tu consulta o mensaje. Nosotros te contactamos a la brevedad. </p>    
             </div>
 
             <form action="404.html" method="post">
-                <div>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido">
+                        </div>
+                    </div>
+                        
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="mail" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="mail" placeholder="ejemplo@servidor.com" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Telefono</label>
+                            <input type="number" class="form-control" id="telefono">
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="mb-3">
+                    <label for="comentarios" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                </div>  
+                
                 <div>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@servidor.com" required>
+                    <button type="input" class="btn btn-primary border-dark formatoBoton ">Enviar</button>
+                    <button type="reset" class="btn btn-primary border-dark formatoBoton">Limpiar datos</button>
                 </div>
-                <div>
-                    <input type="number" name="telefono" id="telefono" placeholder="Ingrese su telefono">
-                </div>
-                                 
-                <div>
-                    <input type="reset" value="Limpiar Datos">
-                    <input type="submit" value="Enviar">
-                </div>
+                
+
 
             </form>
+
         </section>
 
 

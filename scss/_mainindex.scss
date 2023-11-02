@@ -10,18 +10,18 @@
 
 .cajaFondoPrincipal {
     height: 90vh;
-    background-image: url(../assets/img/imagen_principal_index.jpg);
+    background-image: url(../assets/img/entremigas/presentacion.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     .titulo {
         font-family: $tipografia-tituloprincipal;
         font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-xxl );
-        color: white;      }
+        color: black;      }
     .subtitulo {
         font-family: $tipografia-subtituloprincipal;
         font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-l );
-        color: white;        }
+        color: black;        }
 }
 
 @media screen and (max-width: 768px) { 
@@ -37,8 +37,10 @@
     background-image: url(../assets/img/fondo-nav2.PNG);
     background-repeat: repeat-x;
     background-size: contain;
-    background-position: center; 
+    background-position: center;
     
+    
+        
     .letra-tipos-productos {
         font-family: $tipografia-tituloprincipal;
         font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-s );  }
