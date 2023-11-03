@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="¿Necesitas ponerte en contacto con nosotros? Encuentra aquí todas las formas de comunicarte con nuestra panadería">
     <meta name="keywords" content="contacto, contactate, mensaje, mail, nombre, apellido, mail, email, correo, telefono, direccion">
-    <title>Los mejores Panificados | Entre Migas</title>
+    <title>Contactanos | Entre Migas - Panificados Artesanales</title>
     <!-- link para conectar con hoja de estilos bootstrap minificado -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- link para conectar con hoja de estilos -->
@@ -46,34 +46,39 @@
           </nav>
     </header>
 
-    <main>
-        <section class="container">
+    <br>
+
+    <main class="fondoMainContacto">
+        <section class="container bg-white border py-3">
             <h1>¿Necesitas un pedido especial?</h1>
             <div>
                 <p>Dejanos tu consulta o mensaje. Nosotros te contactamos a la brevedad. </p>    
             </div>
+
+            <hr>
+            <br>
 
             <form action="404.html" method="post">
                 <div class="row">
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre">
+                            <input type="text" class="form-control" id="nombre" required>
                         </div>
                         <div class="mb-3">
                             <label for="apellido" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="apellido">
+                            <input type="text" class="form-control" id="apellido" required>
                         </div>
                     </div>
                         
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="mail" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="mail" placeholder="ejemplo@servidor.com" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="mail" placeholder="ejemplo@servidor.com" aria-describedby="emailHelp" required>
                         </div>
                         <div class="mb-3">
                             <label for="telefono" class="form-label">Telefono</label>
-                            <input type="number" class="form-control" id="telefono">
+                            <input type="number" class="form-control" id="telefono" required>
                         </div>
                     </div>
                 </div>
@@ -84,8 +89,8 @@
                 </div>  
                 
                 <div>
-                    <button type="input" class="btn btn-primary border-dark formatoBoton ">Enviar</button>
-                    <button type="reset" class="btn btn-primary border-dark formatoBoton">Limpiar datos</button>
+                    <input type="submit" class="btn btn-primary border-dark formatoBoton" value="Enviar"></input>
+                    <input type="reset" class="btn btn-primary border-dark formatoBoton" value="Limpiar datos"></input>
                 </div>
                 
 
@@ -97,7 +102,8 @@
 
 
     </main>
-    <hr>
+   
+    <br>
     
     <footer class="footer container-fluid">   
         <div class="row justify-content-center align-items-center bloqueFooter">
