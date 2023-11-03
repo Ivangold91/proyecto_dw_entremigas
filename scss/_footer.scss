@@ -17,3 +17,13 @@ footer {
     .texto-footer {
         display: flex;  } 
 }
+
+@media screen and (max-width: 768px) { 
+
+
+    .bloqueInfoFooter {
+        margin-top: 70px;
+    }
+}
+
+ 
