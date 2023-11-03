@@ -58,11 +58,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .cajaFondoPrincipal .titulo {
-    font-size: 7rem;
+  .cajaFondoPrincipal .cajaTituloPrincipal {
+    padding-top: 100px;
+    text-align: center;
   }
-  .cajaFondoPrincipal .subtitulo {
-    font-size: 3rem;
+  .cajaFondoPrincipal .cajaTituloPrincipal .titulo {
+    font-size: 7rem;
+    color: rgb(255, 130, 1);
+  }
+  .cajaFondoPrincipal .cajaTituloPrincipal .subtitulo {
+    font-size: 2rem;
+    font-weight: bold;
   }
 }
 .cardsMain {
@@ -106,6 +112,9 @@
   .fondoSucursales {
     background-color: rgb(29, 29, 29);
     background-image: none;
+  }
+  .etiquetaVideo {
+    display: none;
   }
 }
 .sucursalPrincipal {

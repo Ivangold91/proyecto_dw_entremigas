@@ -26,10 +26,19 @@
 
 @media screen and (max-width: 768px) { 
     .cajaFondoPrincipal {
-        .titulo {
-            font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-xl );    }
-        .subtitulo {
-            font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-m );    }
+        .cajaTituloPrincipal{
+            padding-top: 100px;
+            text-align: center;
+
+            .titulo {
+                font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-xl );
+                color: $color-secundario;    }
+            .subtitulo {
+                font-size: map-get($map: $mapa-tamañosFuentes, $key: fuente-s );
+                font-weight: bold;    }
+
+        }
+        
     }
 }
 

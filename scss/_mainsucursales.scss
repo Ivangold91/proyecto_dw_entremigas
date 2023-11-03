@@ -1,3 +1,6 @@
+
+
+
 .fondoSucursales {
     background-image: url(../assets/img/fondo-nav2.PNG);
     background-repeat: repeat-x;
@@ -9,6 +12,9 @@
     .fondoSucursales {
         background-color: $color-primario;
         background-image: none;
+    }
+    .etiquetaVideo {
+        display: none;
     }
 }
 
