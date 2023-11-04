@@ -8,6 +8,8 @@
     background-position: center;
 }
 
+
+
 @media screen and (max-width: 768px) { 
     .fondoSucursales {
         background-color: $color-primario;
@@ -16,6 +18,7 @@
     .etiquetaVideo {
         display: none;
     }
+ 
 }
 
 .sucursalPrincipal {
@@ -29,3 +32,5 @@
 .cajaSucursalCentro {
     background-color: $color-cuarto !important;
 }
+
+
